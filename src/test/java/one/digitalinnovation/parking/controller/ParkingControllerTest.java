@@ -11,7 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT) // para estartar a aplicação em ports diferentes para não interferir na aplicação principal
-class ParkingControllerIT {
+class ParkingControllerTest extends AbstractContainerBase{
 
     @LocalServerPort
     private int randomPort;
